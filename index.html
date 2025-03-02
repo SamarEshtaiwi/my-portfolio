@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Details</title>
+    <title>Task Board</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="dashboard">
         <aside class="sidebar">
             <div class="logo">
-                <img src="https://i.imgur.com/agMW7ra.png" alt="Future Motion Innovations Logo">
+                <img src="https://i.imgur.com/agMW7ra.png" alt="Logo">
             </div>
             <nav>
                 <ul>
-                    <li><a href="#" onclick="showContent('dashboard-page')">Dashboard</a></li>
-                    <li><a href="#" onclick="showContent('project-page')">Project</a></li>
-                    <li><a href="#" onclick="showContent('task-page')">My Task</a></li>
-                    <li><a href="#" id="setting-link" onclick="showContent('setting-page')">My Team</a></li>
-                  <li><a href="#" onclick="showContent('Setting')">Setting</a></li>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">My Task</a></li>
+                    <li><a href="#">My Team</a></li>
+                    <li><a href="#">Setting</a></li>
                 </ul>
             </nav>
             <div class="user-info">
@@ -29,66 +29,80 @@
             </div>
         </aside>
         <main>
-            <section id="dashboard-page" class="content">
-                <h2>Dashboard Content</h2>
-                <!-- Content here لربط الداش بورد-->
-            </section>
-
-            <section id="project-page" class="content">
-                <h2>Project Content</h2>
-                <!-- Content here لربط صفحه البروجيكت -->
-            </section>
-
-            <section id="task-page" class="content">
-                <h2>Task Content</h2>
-                <!-- Content here -->
-            </section>
-
-       <section id="setting-page" class="content">
-    <div class="team-container">
-      
-        <div class="team-member" onclick="showProfile('Alanoud')">
-                      <img src="https://i.imgur.com/UVG7BNJ.jpg" alt="Profile Picture" class="profile-picture">
-            <h3>Eng.Alanoud</h3>
-            <h4>Alanoud@gmail.com</h4>
-           <button class="view-profile">View Profile</button>
-        </div>
-        <div class="team-member" onclick="showProfile('Samar')">
-                      <img src="https://i.imgur.com/UVG7BNJ.jpg" alt="Profile Picture" class="profile-picture">
-            <h3>Eng.Samar</h3>
-            <h4>Samar@gmail.com</h4>
-           <button class="view-profile">View Profile</button>
-        </div>
-        <div class="team-member" onclick="showProfile('Abdulla')">
-                      <img src="https://i.imgur.com/UVG7BNJ.jpg" alt="Profile Picture" class="profile-picture">
-            <h3>Eng.Abdulla</h3>
-            <h4>Eng.Abdulla@gmail.com</h4>
-           <button class="view-profile">View Profile</button>
-        </div>
-
-        <div class="team-member" onclick="showProfile('Zainab')">
-                      <img src="https://i.imgur.com/UVG7BNJ.jpg" alt="Profile Picture" class="profile-picture">
-            <h3>Eng.Zainab</h3>
-            <h4>Zainab@gmail.com</h4>
-           <button class="view-profile">View Profile</button>
-        </div>
-    </div>
-</section>
-
-<section id="profile-details" class="content" style="display:none;">
-    <div class="profile-container">
+          
         
-                 <img id="profile-picture" src="https://i.imgur.com/UVG7BNJ.jpg" alt="Profile Picture" class="profile-picture">
-        <p id="profile-name">Name: </p>
-        <p id="profile-email">Email: </p>
-        <p id="profile-email">Gender: female </p>
-        <p id="profile-email">Roule: markting</p>
-        <a href="#" class="go-back" onclick="goBack()">Go Back</a>
+          <div class="task-board">
+  <div class="column" id="todo-column">
+    
+    
+    <h4>To Do</h4>
+    
+    <div class="task-card">
+    
+      <div class="dropdown">
+        <button class="dropdown-button">•••</button>
+         <p id="task-status">Task 1</p>
+           <p>Hero section</p>
+                        <p>Typography change</p>
+        <div class="dropdown-content">
+          <a href="#" onclick="moveTask(this, 'todo-column')">to do</a>
+          <a href="#" onclick="moveTask(this, 'inprogress-column')">in progress</a>
+          
+          <a href="#" onclick="moveTask(this, 'done-column')">done</a>
+        </div>
+        
+      </div>
     </div>
-</section>
+  </div>
 
+  <div class="column" id="inprogress-column">
+    <h4>In Progress</h4>
+    
+  </div>
+            
+
+  <div class="column" id="done-column">
+    
+    <h4>Done</h4>
+       <div class="task-card">
+    
+      <div class="dropdown">
+        <button class="dropdown-button">•••</button>
+         <p id="task-status">Task 1</p>
+           <p>Hero section</p>
+                        <p>Typography change</p>
+        <div class="dropdown-content">
+          <a href="#" onclick="moveTask(this, 'todo-column')">to do</a>
+          <a href="#" onclick="moveTask(this, 'inprogress-column')">in progress</a>
+          
+          <a href="#" onclick="moveTask(this, 'done-column')">done</a>
+          
+        </div>
+        
+  </div>
+         
+</div>
+    
+       <div class="task-card">
+    
+      <div class="dropdown">
+        <button class="dropdown-button">•••</button>
+         <p id="task-status">Task 1</p>
+           <p>Hero section</p>
+                        <p>Typography change</p>
+        <div class="dropdown-content">
+          <a href="#" onclick="moveTask(this, 'todo-column')">to do</a>
+          <a href="#" onclick="moveTask(this, 'inprogress-column')">in progress</a>
+          
+          <a href="#" onclick="moveTask(this, 'done-column')">done</a>
+          
+          
+        </div>
+
+          
         </main>
+         
     </div>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

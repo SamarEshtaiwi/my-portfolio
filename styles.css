@@ -6,16 +6,14 @@ body {
     display: flex;
     height: 95vh;
     font-size: 12px;
-     background-image: url('https://i.imgur.com/mrWFtiT.png');
+    background-image: url('https://i.imgur.com/mrWFtiT.png');
     background-repeat: ; /* منع تكرار الصورة */
     overflow-y: hidden;
     text-align: center;
-  
 }
 
-
 .dashboard {
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: row; /* لعرض الشريط الجانبي على اليسار */
     width: 100%;
@@ -92,9 +90,9 @@ body {
 }
 
 main {
-    flex-grow: 1;
-    padding: 0px;
-   
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .content {
@@ -105,73 +103,91 @@ main {
     display: block;
 }
 
-form {
-    background-color: #fff;
-    padding: 30px;
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #f8f8f8;
+    padding: 70px;
     border-radius: 10px;
+    text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-   height: 80vh;
-    margin:  auto;
-    margin-top: 20px;
-}
-
-.form-group {
-    margin-bottom: 0px;
-}
-
-
-label {
-    display: block;
-    margin-bottom: 0px;
-    text-elign:left ;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-select {
-    width: 70%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
-button {
-    background-color: #368888;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #2a6f6f;
-     width: 70%;
 }
 
 .profile-container {
+    background-color: white;
+    padding: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.go-back {
+    color: #368888;
+    text-decoration: none;
+}
+
+
+.team-member {
+    width: 200px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
     margin-bottom: 10px;
 }
 
-.profile-picture {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
+.team-member h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
-span {
-    display: block;
-    color: #368888;
-    cursor: pointer;
+.team-member p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
 }
 
-.profile-picture {
-    margin-bottom: 10px; /* هذه القيمة تحدد المسافة بين الصورة والفورم */
+.view-profile-btn {
+    background-color: #6c4ed8;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-profile-btn:hover {
+    background-color: #573ab8;
+}
+
+button.view-profile {
+    background-color: #6C22A6; /* لون الزر */
+    color: white;
+    border: none;
+    border-radius: 0 0 8px 8px; /* جعل الزوايا السفلية فقط مستديرة */
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%; /* لجعل الزر يأخذ عرض الكارد بالكامل */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+}
+
+button.view-profile:hover {
+    background-color: #581a86; /* لون غامق قليلاً عند التمرير فوق الزر */
 }

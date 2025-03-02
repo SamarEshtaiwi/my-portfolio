@@ -1,31 +1,31 @@
 body {
     font-family: 'janna lt', sans-serif;
+  
     margin: 0;
     padding: 0;
     direction: rtl;
     display: flex;
-    height: 95vh;
+    height: 100vh;
     font-size: 12px;
    background-image: url('https://i.imgur.com/mrWFtiT.png');
   لون بنفسجي خفيف جدًا مع شفافية عالية */
     background-repeat: no-repeat; /* منع تكرار الصورة */
-   overflow-y: hidden;
-   text-align: center;
-
+   direction:center;
+ 
 }
 
 
 .dashboard {
-   text-align: center;
     display: flex;
     flex-direction: row-reverse; /* لتغيير اتجاه الواجهة */
     width: 100%;
+ direction:center;
   
 }
 
 .sidebar {
     width: 180px;
-    height: 610px;
+    height: 800px;
     background-color: white;
     color: black;
     display: flex;
@@ -58,7 +58,7 @@ body {
     color: black;
     font-size: 12px;
     display: block;
-    padding: 8px 30px;
+    padding: 8px 20px;
     border-radius: 30px;
     transition: background-color 0.3s;
 }
@@ -97,112 +97,537 @@ body {
 
 main {
     flex: 1;
-    padding: 40px;
-   direction: rtl;
-    text-align: center;
-  
-}
-body {
-    direction: rtl;
-   
+    padding: 10px;
+  width: 100px;
+   height: 50px;
+  padding: 12px;
+  align-items: left;
 }
 
-
-.task-board {
-   text-align: center;
-    display: flex;
+header.task-header {
+    display: flex; 
+    flex-direction: row-reverse;
+    align-items: center;
     justify-content: space-between;
-   direction: rtl;
-   text-align: center;
-}
-
-.column {
     background-color: #fff;
-   text-align: right;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-   text-align: left;
-  
-}
-
-.column h3 {
-   text-align: left;
-    margin-bottom: 30px;
-    font-size: 15px;
-    color: #333;
-   direction:center;
-}
-
-.task-card {
-   text-align: left;
-    background-color: #f1f1f1;
-    padding: 15px;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
-    text-align: left;
-}
-
-.task-card p {
-    margin: 0;
-    color: #555;
- text-align: left;
-}
-.task-board {
-  display: flex;
-  gap: 1px; /* تقليل المسافة بين الأعمدة */
-}
-
-
-
-.column {
-  background-color: #f0f0f0;
-  padding: 10px;
-  border-radius: 8px;
-  width: 300px;
+  width: 500px;
+    height:2px;
+    right:30px; 
+    padding: 60px;
   
 }
 
-.task-card {
-  background-color: white;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+header.task-header div {
+    order: 1; /* ترتيب النص */
+  
+  
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+header.task-header img {
+    order: 2; /* ترتيب الصورة */
+    max-width: 100px; /* يمكنك تعديل هذا الحجم حسب الحاجة */
+    height: auto;
+    padding: 50px;
 }
 
-.dropdown-button {
-  background: none;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
+header h1 {
+  
+    margin: 0 0 px 0;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+header p {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 7px 16px;
-  text-decoration: none;
-  display: block;
+header button {
+    background-color: #368888;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
 }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+.content {
+    display: flex;
+    justify-content: ;
+    flex-direction: row-reverse;
+   
+   
+  
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.project-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; /* يفصل العنوان عن النقاط */
+    align-items: center;
+    width: 100%; /* يجعل العناصر تأخذ عرض الحاوية الكامل */
+  
+ 
+   
+  
+}
+
+.project-title {
+ 
+    margin: 0;
+    padding: 0;
+}
+
+.project-dots {
+    display: flex;
+    gap: 10px; /* المسافة بين النقاط */
+}
+
+
+.project-dots .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+  
+  
+}
+
+
+.left-section {
+   font-size: 10px;
+    width: 30%;
+  height: 10vh;
+    display: flex;
+    justify-content: center; /* لعرض المحتوى في الوسط */
+}
+
+.right-section {
+    width: 20%;
+   font-size: 1px;
+   justify-content: center;
+}
+
+.project-details {
+    width: 50%;
+    max-width: 300px; /* تقليل العرض */
+  
+  height: 10vh;
+}
+.project-title {
+    font-size: 12px;
+    color: #333;
+    font-weight: bold; /* لجعل الخط بولد */
+}
+.time-and-avatars {
+    display: flex;
+    align-items: left;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    margin-right: 120px; /* لإضافة مسافة بين الوقت والصور */
+}
+
+.avatars {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -5px; /* لإضافة تداخل بين الصور */
+    border: 2px solid white; /* لإظهار حدود بيضاء حول الصور */
+}
+.task-image {
+    width: 100px !important; /* تعديل عرض الصورة إلى 300 بكسل */
+    height: 150PX !important; /* لضمان الحفاظ على النسب */
+    display: block; /* لجعل الصورة كتلة منفصلة */
+    margin: 9PX ; /* لتوسيط الصورة في الحاوية */
+}
+
+
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* لضمان بدء النص من اليسار */
+}
+
+.project-image {
+    width: 90%;
+    border-radius: 8px;
+    margin-bottom: 0px; /* لإضافة مسافة بين الصورة والمحتوى */
+}
+
+.card-content {
+    width: 100%;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+.task-status h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 121px;
+    color: #6962AD; /* لتغيير لون النص */
+}
+
+
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.progress {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #4b3f72;
+}
+
+.card button {
+    background-color: #368888;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.task-status h3 {
+    margin-top: 20;
+    margin-bottom: 10px;
+    font-size: 16px;
+   margin-left: 80px;
+}
+
+.circles {
+  
+    display: flex;
+   border-radius: 20px;
+    justify-content: space-between;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   margin-center: 4px;
+   background-color: #fff;
+   width: 370px;
+    height: 140px;
+    align-items: center;
+      margin: 20px 0;
+ 
+  margin-left: 250px;
+  
+
+}
+
+
+.circle-container {
+   margin-right: 20px;
+    text-align: center;
+    position: relative;
+    margin-left: -0px; /* إضافة مسافة بين الدوائر */
+   
+    border-radius: 8px;
+ 
+    padding: 20px;
+    font-size: 12px;
+  
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 7px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+  
+}
+
+
+.circle .percentage {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-text {
+    font-size: 12px;
+    margin-top: 5px;
+  
+}
+
+#completed-circle {
+    border-color: lightgray;
+    border-top-color: green;
+    border-right-color: green;
+}
+
+#inprogress-circle {
+    border-top-color: blue;
+    border-right-color: blue;
+}
+
+#notstarted-circle {
+    border-color: lightgray;
+    border-top-color: red;
+    border-right-color: red;
+}
+
+.team-members {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-size: 10px;
+      margin: 10px 0;
+   width: 310px;
+    height: 330px;
+   align-items: text;
+ 
+    margin-right: -222px;
+   margin-right: -380px;
+  
+
+  
+}
+
+.team-members:hover {
+    background-color: #e0dffb;
+  
+}
+
+.team-members h3 {
+    margin-top: 0;
+    font-size: px;
+    color: #4b3f72;
+}
+
+.team-members ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.team-members ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.team-members .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.team-members .member-info {
+    flex: 1;
+  
+}
+
+.team-members .member-info .name {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.team-members .member-info .role {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.team-members button {
+    background-color: #368888;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 12px;
+}
+
+.today-task-box {
+    background-color: #F5F5F5; /* Background color for the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Internal padding */
+    margin-left: 0px; /* Space from the left (adjust as needed) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: flex;
+    align-items: center; /* Center content vertically */
+  flex-direction: row-reverse;
+}
+
+.today-task-box h1 {
+    font-size: 30px;
+    color: #4B3F72; /* Title color */
+    margin: 0;
+   padding-left: 50px;
+      padding-left: 0px; /* Adjust this value to control the space from the image */
+ 
+}
+
+.today-task-box p {
+    color: #777;
+    margin-top: 15px;
+    font-size: 14px;
+  flex-direction: row-reverse;
+}
+
+.today-task-box .button {
+    background-color: #368888; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: auto; /* Push button to the right */
+    font-size: 12px;
+  
+}
+.today-task-box {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF; /* White background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 250px; /* Adjust this to move it closer to the sidebar */
+    max-width: 0%; /* Adjust width */
+    min-width: 800px; /* Minimum width */
+    height: 100px; /* Set the height to your preference */
+  
+  
+}
+
+.today-task-box img {
+    margin-right: 100px; /* Adjust this value to control the space between the image and the text */
+}
+
+
+.project-card {
+    background-color: ;
+    border-radius: 0px;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 80%; /* Adjust as needed */
+  margin-right: -220px;
+   margin-right: -490px;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-details h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.project-details p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 70%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.progress-value {
+    background-color: #6C22A6; /* Adjust color */
+    height: 8px;
+}
+
+.time-estimate p {
+    font-size: 14px;
+    color: #333;
+}
+
+.team-members img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.detail-task h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.detail-task ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.detail-task ol li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.detail-button {
+    display: block;
+    width: 100%;
+    background-color: #368888;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }

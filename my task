@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://i.imgur.com/agMW7ra.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">My Task</a></li>
+                    <li><a href="#">My Team</a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <img src="https://i.imgur.com/D6ugqQO.png" alt="User" class="user-avatar">
+                <p>Rimsha Khan</p>
+                <p>UI/UX Designer</p>
+                <a href="#" class="logout">Logout</a>
+            </div>
+        </aside>
+        <main>
+          
+        
+          <div class="task-board">
+  <div class="column" id="todo-column">
+    
+    
+    <h4>To Do</h4>
+    
+    <div class="task-card">
+    
+      <div class="dropdown">
+        <button class="dropdown-button">•••</button>
+         <p id="task-status">Task 1</p>
+           <p>Hero section</p>
+                        <p>Typography change</p>
+        <div class="dropdown-content">
+          <a href="#" onclick="moveTask(this, 'todo-column')">to do</a>
+          <a href="#" onclick="moveTask(this, 'inprogress-column')">in progress</a>
+          
+          <a href="#" onclick="moveTask(this, 'done-column')">done</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column" id="inprogress-column">
+    <h4>In Progress</h4>
+    
+  </div>
+            
+
+  <div class="column" id="done-column">
+    
+    <h4>Done</h4>
+       <div class="task-card">
+    
+      <div class="dropdown">
+        <button class="dropdown-button">•••</button>
+         <p id="task-status">Task 1</p>
+           <p>Hero section</p>
+                        <p>Typography change</p>
+        <div class="dropdown-content">
+          <a href="#" onclick="moveTask(this, 'todo-column')">to do</a>
+          <a href="#" onclick="moveTask(this, 'inprogress-column')">in progress</a>
+          
+          <a href="#" onclick="moveTask(this, 'done-column')">done</a>
+          
+        </div>
+        
+  </div>
+         
+</div>
+    
+       <div class="task-card">
+    
+      <div class="dropdown">
+        <button class="dropdown-button">•••</button>
+         <p id="task-status">Task 1</p>
+           <p>Hero section</p>
+                        <p>Typography change</p>
+        <div class="dropdown-content">
+          <a href="#" onclick="moveTask(this, 'todo-column')">to do</a>
+          <a href="#" onclick="moveTask(this, 'inprogress-column')">in progress</a>
+          
+          <a href="#" onclick="moveTask(this, 'done-column')">done</a>
+          
+          
+        </div>
+
+          
+        </main>
+         
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

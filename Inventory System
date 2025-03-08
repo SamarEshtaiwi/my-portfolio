@@ -1,0 +1,222 @@
+using InventorySystem.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+namespace InventorySystem.Controllers
+{
+    public class ProductController : Controller
+    {
+
+        // قائمة لحفظ المنتجات في الذاكرة
+        private static List<Product> products = new List<Product>
+        {
+            new Product { Id = 1, Name = "Laptop", Price = 1500, Stock = 10 },
+            new Product { Id = 2, Name = "Mouse", Price = 20, Stock = 50 },
+            new Product { Id = 3, Name = "Keyboard", Price = 30, Stock = 30 }
+        };
+        public ActionResult Dash()
+        {
+            return View();
+        }
+
+
+        // عرض قائمة المنتجات
+        public ActionResult Index()
+        {
+            return View(products);
+        }
+
+  
+
+        // عرض فورم إضافة منتج جديد
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // حفظ المنتج الجديد في القائمة
+        [HttpPost]
+        public ActionResult Create(Product product)
+        {
+            product.Id = products.Count + 1; // تحديد ID جديد للمنتج
+            products.Add(product);
+            return RedirectToAction("Index");
+        }
+
+
+    }
+
+
+    }
+
+
+
+@model InventorySystem.Models.Product
+
+@{
+    ViewBag.Title = "Dash";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <style>
+        body {
+            font-family: janna ltd, sans-serif;
+            background-color: #c6ddf3;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #b0c4de;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .header {
+            background-color: #8978c1;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+            .image-container img {
+                width: 80%;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            background-color: #8978c1;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+            .btn:hover {
+                background-color: #6d5a9d;
+            }
+
+        /* الفورم المخفي */
+        .form-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #c6ddf3;
+            padding: 20px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+            .form-popup h3 {
+                text-align: center;
+                color: #333;
+            }
+
+            .form-popup input {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #8978c1;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+
+            .form-popup .btn-container {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+
+            .form-popup .btn {
+                width: 45%;
+            }
+
+        .close-btn {
+            background-color: #c43d3d;
+        }
+
+            .close-btn:hover {
+                background-color: #a32a2a;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Inventory Management System</div>
+
+        <div class="image-container">
+            <img src="https://source.unsplash.com/800x400/?warehouse,inventory" alt="Inventory Image">
+        </div>
+
+        <p><strong>Please select an action</strong></p>
+
+        <div class="buttons">
+            <button class="btn" onclick="openForm()">Add Product</button>
+            <button class="btn">Update Stock</button>
+            <button class="btn">View Products</button>
+            <button class="btn">Delete Product</button>
+            <button class="btn">Exit</button>
+        </div>
+    </div>
+
+    <!-- الفورم المخفي -->
+    <div class="form-popup" id="productForm">
+        <h3>Add New Product</h3>
+        <input type="text" placeholder="Product Name">
+        <input type="text" placeholder="Price">
+        <input type="text" placeholder="Stock">
+
+        <div class="btn-container">
+            <button class="btn save-btn">SAVE</button>
+            <button class="btn close-btn" onclick="closeForm()">CANCEL</button>
+        </div>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("productForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("productForm").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://i.imgur.com/agMW7ra.png" alt="Future Motion Innovations Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showContent('dashboard-page')">Dashboard</a></li>
+                    <li><a href="#" onclick="showContent('project-page')">Project</a></li>
+                    <li><a href="#" onclick="showContent('task-page')">My Task</a></li>
+                    <li><a href="#" onclick="showContent('team-page')">My Team</a></li>
+                    <li><a href="#" onclick="showContent('setting-page')">Setting</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <img src="https://i.imgur.com/D6ugqQO.png" alt="User" class="user-avatar">
+                <p>Rimsha Khan</p>
+                <p>UI/UX Designer</p>
+                <a href="#" class="logout">Logout</a>
+            </div>
+        </aside>
+
+        <main>
+            <!-- Dashboard Page -->
+            <section id="dashboard-page" class="content active">
+                <h2>Dashboard</h2>
+                <p>Welcome to your dashboard.</p>
+            </section>
+
+            <!-- Project Page -->
+            <section id="project-page" class="content">
+                <h2>Projects</h2>
+                <p>Here are your projects.</p>
+            </section>
+
+            <!-- My Task Page -->
+            <section id="task-page" class="content">
+                <h2>My Task</h2>
+                <p>Here are your tasks.</p>
+            </section>
+
+            <!-- My Team Page -->
+            <section id="team-page" class="content">
+                <h2>My Team</h2>
+                <div class="team-container">
+                    <!-- Team member profiles here -->
+                </div>
+            </section>
+
+            <!-- Setting Page -->
+            <section id="setting-page" class="content">
+                
+                <form>
+                  <div class="form-group">
+                    <div class="profile-container">
+    <label for="upload-photo">
+        <img src="https://i.imgur.com/UVG7BNJ.jpg" alt="Profile Picture" class="profile-picture">
+    </label>
+    <input type="file" id="upload-photo" style="display: none;" accept="image/*">
+    <span>Upload Photo</span>
+</div>
+
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" placeholder="Enter your birthdate">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                   <button id="save-button" class="save-button">save change</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

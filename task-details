@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://i.imgur.com/agMW7ra.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">My Task</a></li>
+                    <li><a href="#">My Team</a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <img src="https://i.imgur.com/D6ugqQO.png" alt="User" class="user-avatar">
+                <p>Rimsha Khan</p>
+                <p>UI/UX Designer</p>
+                <a href="#" class="logout">Logout</a>
+            </div>
+        </aside>
+<div class="task-details-container">
+    <div class="task-header">
+      
+
+      <img src="https://i.imgur.com/HLTaXln.jpg" alt="Task Image" class="task-image">
+
+     
+      <div class="task-info">
+    <h2>Task name</h2>
+    <p>Priority: <span id="priority">in progress</span></p>
+    <p>Status: <span id="status" class="status-not-started">Not Started</span></p>
+    <p>Created on: 20/08/2023</p>
+</div>
+
+        <a href="#" class="go-back">Go Back</a>
+    </div>
+    <div class="task-details">
+        <p>Here are all the details</p>
+        <ul>
+            <li>1. A cake, with candles to blow out. (Layer cake, cupcake, flat sheet cake)</li>
+            <li>2. The birthday song.</li>
+            <li>3. A place to collect gifts.</li>
+        </ul>
+        <p> :Optional</p>
+        <ul>
+            <li>• Paper cone-shaped party hats, paper whistles that unroll.</li>
+            <li>• Games, activities (carry an object with your knees, then drop it into a milk bottle.)</li>
+            <li>• Lunch: sandwich halves, or pizza slices, juice, pretzels, potato chips…THEN cake & candles and the song.</li>
+        </ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+  </html>

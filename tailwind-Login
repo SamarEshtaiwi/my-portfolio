@@ -1,0 +1,71 @@
+<div data-layer="Login" class="Login" style="width: 1440px; height: 1070px; position: relative; background: linear-gradient(138deg, #368888 0%, #6C22A6 65%); overflow: hidden">
+  <div data-layer="Input" class="Input" style="width: 630px; height: 735.36px; left: 405px; top: 167px; position: absolute">
+    <div data-layer="Bg" class="Bg" style="width: 630px; height: 735.36px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 24px; border: 0.30px #B9B9B9 solid"></div>
+    <div data-layer="Details" class="Details" style="width: 516px; height: 556px; left: 57px; top: 90px; position: absolute">
+      <div data-layer="Create New" class="CreateNew" style="width: 322px; height: 25px; left: 105px; top: 531px; position: absolute">
+        <div data-layer="Don’t have an accoun" class="DonTHaveAnAccoun" style="left: 0px; top: 0px; position: absolute; opacity: 0.65; text-align: right"><span style="color: #202224; font-size: 18px; font-family: Nunito Sans; font-weight: 600; word-wrap: break-word">Don’t have an account?  </span><span style="color: #5A8CFF; font-size: 18px; font-family: Nunito Sans; font-weight: 600; text-decoration: underline; word-wrap: break-word"> </span></div>
+        <div data-layer="Create Account" class="CreateAccount" style="left: 194px; top: 0px; position: absolute; text-align: right; color: #5A8CFF; font-size: 18px; font-family: Nunito Sans; font-weight: 700; text-decoration: underline; word-wrap: break-word">Create Account</div>
+      </div>
+      <div data-layer="Button / Compose message" class="ButtonComposeMessage" style="width: 418px; height: 56px; left: 49px; top: 457px; position: absolute">
+        <div data-layer="Rectangle" class="Rectangle" style="width: 418px; height: 56px; left: 0px; top: 0px; position: absolute; opacity: 0.90; background: #368888; border-radius: 8px"></div>
+        <div data-layer="Sign In" class="SignIn" style="left: 177px; top: 15px; position: absolute; text-align: center; color: white; font-size: 20px; font-family: Nunito Sans; font-weight: 700; word-wrap: break-word">Sign In</div>
+      </div>
+      <div data-layer="Password" class="Password" style="width: 516px; height: 145px; left: 0px; top: 257px; position: absolute">
+        <div data-layer="Input" class="Input" style="width: 516px; height: 56px; left: 0px; top: 40px; position: absolute; background: #F1F4F9; border-radius: 8px; border: 1px #D8D8D8 solid"></div>
+        <div data-layer="Password" class="Password" style="width: 164px; height: 14px; left: 16px; top: 61px; position: absolute">
+          <div data-svg-wrapper data-layer="Oval" class="Oval" style="left: 0px; top: 0px; position: absolute">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z" fill="#A6A6A6"/>
+          </svg>
+          </div>
+          <div data-svg-wrapper data-layer="Oval" class="Oval" style="left: 30px; top: 0px; position: absolute">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z" fill="#A6A6A6"/>
+          </svg>
+          </div>
+          <div data-svg-wrapper data-layer="Oval" class="Oval" style="left: 60px; top: 0px; position: absolute">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z" fill="#A6A6A6"/>
+          </svg>
+          </div>
+          <div data-svg-wrapper data-layer="Oval" class="Oval" style="left: 90px; top: 0px; position: absolute">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z" fill="#A6A6A6"/>
+          </svg>
+          </div>
+          <div data-svg-wrapper data-layer="Oval" class="Oval" style="left: 120px; top: 0px; position: absolute">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z" fill="#A6A6A6"/>
+          </svg>
+          </div>
+          <div data-svg-wrapper data-layer="Oval" class="Oval" style="left: 150px; top: 0px; position: absolute">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z" fill="#A6A6A6"/>
+          </svg>
+          </div>
+        </div>
+        <div data-layer="Password" class="Password" style="left: 0px; top: 0px; position: absolute; opacity: 0.80; color: #202224; font-size: 18px; font-family: Nunito Sans; font-weight: 600; word-wrap: break-word">Password</div>
+        <div data-layer="Remember Password" class="RememberPassword" style="left: 36px; top: 120px; position: absolute; opacity: 0.60; color: #202224; font-size: 18px; font-family: Nunito Sans; font-weight: 600; word-wrap: break-word">Remember Password</div>
+        <div data-layer="Check" class="Check" style="width: 24px; height: 24px; left: 0px; top: 120px; position: absolute">
+          <div data-layer="Bo" class="Bo" style="width: 24px; height: 24px; left: 0px; top: 0px; position: absolute; border-radius: 6px; border: 0.60px #A3A3A3 solid"></div>
+          <div data-layer="Object" class="Object" style="width: 24px; height: 24px; left: 0px; top: 0px; position: absolute">
+            <div data-layer="Bo" class="Bo" style="width: 24px; height: 24px; left: 0px; top: 0px; position: absolute; background: black; border-radius: 6px; border: 0.60px #A3A3A3 solid"></div>
+          </div>
+          <div data-svg-wrapper data-layer="Shape" class="Shape" style="left: 6.60px; top: 8.40px; position: absolute">
+          <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.62427 4.17576C1.38996 3.94145 1.01006 3.94145 0.775742 4.17576C0.541427 4.41007 0.541427 4.78997 0.775742 5.02429L3.77574 8.02429C4.01006 8.2586 4.38996 8.2586 4.62427 8.02429L11.2243 1.42429C11.4586 1.18997 11.4586 0.810075 11.2243 0.57576C10.99 0.341446 10.6101 0.341446 10.3757 0.57576L4.20001 6.7515L1.62427 4.17576Z" fill="#656565"/>
+          </svg>
+          </div>
+          <div data-layer="Shape" class="Shape" style="width: 10.80px; height: 7.80px; left: 6.60px; top: 8.40px; position: absolute; background: #656565"></div>
+        </div>
+      </div>
+      <div data-layer="Email" class="Email" style="width: 516px; height: 96px; left: 0px; top: 121px; position: absolute">
+        <div data-layer="Input" class="Input" style="width: 516px; height: 56px; left: 0px; top: 40px; position: absolute; background: #F1F4F9; border-radius: 8px; border: 1px #D8D8D8 solid"></div>
+        <div data-layer="Email address:" class="EmailAddress" style="left: 0px; top: 0px; position: absolute; opacity: 0.80; color: #202224; font-size: 18px; font-family: Nunito Sans; font-weight: 600; word-wrap: break-word">Email address:</div>
+        <div data-layer="esteban_schiller@gma" class="EstebanSchillerGma" style="left: 16px; top: 56px; position: absolute; color: #A6A6A6; font-size: 18px; font-family: Nunito Sans; font-weight: 600; word-wrap: break-word">esteban_schiller@gmail.com</div>
+      </div>
+      <div data-layer="Login to Account" class="LoginToAccount" style="left: 133px; top: 0px; position: absolute; color: #202224; font-size: 32px; font-family: Nunito Sans; font-weight: 700; word-wrap: break-word">Login to Account</div>
+      <div data-layer="Please enter your em" class="PleaseEnterYourEm" style="left: 57px; top: 59px; position: absolute; opacity: 0.80; color: #202224; font-size: 18px; font-family: Nunito Sans; font-weight: 600; word-wrap: break-word">Please enter your email and password to continue</div>
+    </div>
+  </div>
+</div>
